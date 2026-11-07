@@ -1,0 +1,16 @@
+services:
+  jupyter:
+    build: .
+    image: parcial-gestion-datos:latest
+    container_name: parcial-gestion-datos
+    # Solo se publica en localhost: el servidor no queda expuesto a la red.
+    ports:
+      - "127.0.0.1:8888:8888"
+    # ./work del host = /home/jovyan/work en el contenedor (notebook, datos y salidas).
+    volumes:
+      - ./work:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    # Sin token porque el puerto solo escucha en 127.0.0.1 (uso local del parcial).
+    command: start-notebook.py --IdentityProvider.token='' --ServerApp.root_dir=/home/jovyan/work
+    restart: unless-stopped

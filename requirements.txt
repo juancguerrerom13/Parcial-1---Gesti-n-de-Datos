@@ -1,0 +1,14 @@
+# Dependencias adicionales a las que ya trae quay.io/jupyter/scipy-notebook.
+# La imagen base ya incluye: pandas, numpy, scipy, matplotlib, seaborn y scikit-learn,
+# suficientes para el parcial. Por regla del parcial no se agregan librerías nuevas
+# sin aprobación previa; si se aprueba alguna (p. ej. imbalanced-learn para el
+# balanceo del punto 5.4), se añade aquí con versión fija y se reconstruye la imagen.
+
+
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+ydata-profiling
+setuptools<81

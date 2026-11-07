@@ -1,0 +1,5 @@
+# Solo requirements.txt se necesita en el contexto de build; los datos se montan como volumen.
+work/
+.git/
+.claude/
+*.md
