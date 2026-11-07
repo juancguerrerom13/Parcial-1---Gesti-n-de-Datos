@@ -1,4 +1,4 @@
-# Parcial final · Gestión de Datos · Parte 2 (práctica)
+# Parcial final · Gestión de Datos · Parte 2 (práctica) - Juan Camilo Guerrero Martínez
 
 Pontificia Universidad Javeriana — Maestría en Analítica e Inteligencia de Negocios.
 Análisis, limpieza y construcción de una vista minable sobre `ConsumerComplaints_taller.csv` para predecir `Consumer Disputed` (Yes/No).
